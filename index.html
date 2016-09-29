@@ -11,7 +11,7 @@
         <title> BOOTSTRAP TO WORDPRESS</title>
         
         <!-- FONT AWESOME ICONS -->
-        <link href="assets/css/font-awesome/css/font-awesome.min.css">
+        <link href="assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         
         <!-- GOOGLE FONTS -->
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -106,7 +106,7 @@
                         <p class="lead"><strong> Subscribe to our mailing list.</strong> We'll send something special as a thank you.</p>
                     </div>
                     <div class="col-sm-4">
-                        <button class="btn btn-success btn-lg btn-block" data-togggle="modal" data-target="#myModal"> Click Here to Subscribe</button>
+                        <button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#myModal"> Click Here to Subscribe</button>
                     </div>
                 
                 </div>
@@ -160,17 +160,45 @@
         </footer>
         
         <!-- MODAL -->
-        <div>
-        
-        </div>
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" >&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel"> <i class="fa fa-envelope" aria-hidden="true"></i> Subscribe to our Mailing List</h4>
+                    </div><!-- modal-header -->
+                    <div class="modal-body">
+                            <p>Simply enter your name and email! As a thank you for joining us, we're going to give you on of our best selling courses, <em>for free!</em></p>
+                        <form class="form-inline" role="form">
+                            <div class="form-group">
+                            
+                                <label class="sr-only" for="subscribe-name">Your first name</label> 
+                                <input type ="text" class="form-control" id="subscribe-name" placeholder="Your First Name">
+                                </div> <!-- form-group -->
+                            <div class="form-group">
+                            
+                                <label class="sr-only" for="subscribe-email">and your email</label> 
+                                <input type="text" class="form-control" id="subscribe-email" placeholder="and your email">
+                            </div> <!-- form-group -->
+                        <input type="submit" class="btn btn-danger" value="Subscribe">
+                        </form>
+                        <hr>
+                        <p> <small> By providing your email you conset to receiving occassional promotional emails &amp; you may unsubscribe at anny time.</small></p>
+                        </div><!-- modal-body -->
+                    
+                </div> <!-- modal-content -->
+            </div><!-- modal-dialog -->
+        </div><!-- modal -->
         
         <!-- TEST GITHUB -->
-
+      
         <!-- BOOTSTRAP CORE JAVASCRIPT -->
+    
         <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script src="assets/js/jquery-3.1.1.min.js"></script>
+        <script src="assets/js/jquery-2.1.1.min.js"></script>
         <script src="assets/js/main.js"></script>
-        
+    
+        <script src="assets/js/bootstrap.min.js"></script>
         <!-- TYPEKIT FOR PROXIMA NOVA -->
         <script src="https://use.typekit.net/hut6lud.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
