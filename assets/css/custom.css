@@ -40,6 +40,22 @@ h4{
     font-size: 18px; 
 }
 
+p{
+    margin:0 0 15px;
+}
+p.lead{
+    font-weight: normal;
+}
+
+a:link, a:visited{
+    color: #dd5638;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #c9302c;
+}
+
 button, input, .btn, a.btn {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -120,6 +136,7 @@ blockquote cite{
 blockquote:before{
     display:none;
 }
+
 /* === HERO === */
 #hero {
     background: url('../img/hero-bg.jpg') 50% 0 repeat fixed;
@@ -187,7 +204,12 @@ blockquote:before{
     
 }
 
-/* == LAYOUT === */
+
+/* ==== LAYOUT ==== */
+
+.row + .row {
+    margin-top: 20px;
+}
 section{
     padding: 80px 0;
 }
@@ -235,7 +257,7 @@ section h3{
 }
 
 #instructor{
-    background: url('../img/brad-elvis.png') 90% -10px no-repeat;
+    background: white url('../img/brad-elvis.png') 90% -10px no-repeat;
 }
 
 #instructor h2{
@@ -270,6 +292,7 @@ section h3{
     font-weight: normal;
     
 }
+
 
 #kudos{
     
@@ -307,6 +330,38 @@ section h3{
 #signup .btn{
     font-size: 24px;
 }
+
+footer{
+    background: #3e4249;
+    color: white;
+    padding: 20px 0 10px;
+    font-size = 12px;
+}
+
+footer p {
+    margin: 0;
+    
+}
+
+footer a:link, footer a:visited {
+    color: white;
+    
+}
+
+footer a:hover{
+    color: #dd5638;
+}
+
+footer li.signup-link a{
+    color:#dd5638;
+}
+
+footer li.signup-link a:hover{
+    font-weight: bold; 
+    font-size: 1.1em;
+}
+
+
 /* === CUSTOM ICON SPRITES === */
 
 i.ci {
@@ -323,3 +378,37 @@ i.ci {
 .ci.ci-community    {    background-position: -120px 0; }
 .ci.ci-instructor    {    background-position: -160px 0; }
 .ci.ci-device    {    background-position: -200px 0; }
+
+/* ==== MEDIA QUERIES ==== */
+@media screen and (max-width : 991px){
+    #instructor .container{
+        background: rgba(255,255,255,0.8);
+         padding-bottom: 25px;
+    }
+}
+
+@media screen and (max-width : 768px ){
+    
+    .logo {
+        width: 50%;
+    }
+    #optin p {
+        margin: 0 0 10px;
+    }
+    
+    #featurette iframe {
+        height: 240;
+    }
+}
+
+@media screen and (max-width : 568px ){
+    #instructor .num{
+        height:100px;
+        width: 100px;
+        font-size: 22px;
+    }
+    
+    #instructor .num span {
+        font-size: 16px;
+    }
+}
